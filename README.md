@@ -56,7 +56,7 @@ Our platform promotes:
 📦 **How to Run Locally**  
 1. Clone the repository:  
    
-   git clone https://github.com/your-username/Clean-Green-Waste-Management.git
+   git clone https://github.com/harshi-068/PraKritiX_SIH.git
 
    cd Clean-Green-Waste-Management
    
