@@ -1,0 +1,118 @@
+/* Global Styles */
+body, html {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevents scrollbars */
+  height: 100%;
+}
+
+/* Login Container */
+.login-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(270deg, powderblue, #496a87);
+  padding: 40px; /* Increased padding for better spacing */
+  gap: 30px;
+}
+
+/* Image Section */
+.image-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-section img {
+  width: 100%;          /* Full width of the container */
+  max-width: 480px;      /* Slightly larger max width */
+  max-height: 480px;     /* Maintains proportions */
+  border-radius: 50%;    /* Circular image */
+  margin-bottom: 20px;   /* Spacing below the image */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Image shadow for depth */
+}
+
+.image-section h3 {
+  color: #333;
+  margin-bottom: 5px;
+  font-size: 24px;
+}
+
+.image-section p {
+  color: #555;
+  font-size: 16px;
+}
+
+/* Form Section */
+.form-section {
+  flex: 1;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+h2 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Form Styling */
+.form-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, select {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  outline: none;
+  transition: box-shadow 0.3s, border-color 0.3s;
+}
+
+input:focus, select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.form-footer {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.form-footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.form-footer a:hover {
+  text-decoration: underline;
+}

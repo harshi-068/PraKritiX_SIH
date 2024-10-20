@@ -1,0 +1,189 @@
+/* src/components/VendorPage.css */
+
+/* Container for the vendor page */
+
+.vendor-container {
+    display: flex; /* Flex container for sidebar and content */
+    height: 100vh; /* Full height */
+    transition: all 0.3s ease;
+  }
+  
+  /* Sidebar styles */
+  .sidebar {
+    background-color: #4c6589;
+    background-size: cover; /* Cover the entire sidebar */
+    backdrop-filter: blur(10px); /* Optional: blur effect for glassmorphism */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    padding: 20px;
+    position: relative;
+    transition: width 0.3s ease;
+    overflow: hidden; /* Hide overflow when closed */
+  }
+  
+  .sidebar.closed {
+    background-color: #3A3A3A; /* Solid color when closed */
+    width: 60px; /* Width when closed */
+    display: flex;
+    align-items: center; /* Center the user icon */
+    justify-content: center; /* Center the user icon */
+  }
+  
+  .sidebar.open {
+    width: 250px; /* Full width when open */
+  }
+  
+  /* Profile Section */
+  .profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the profile image and text */
+    margin-bottom: 20px;
+  }
+  
+  .profile-pic {
+    width: 80px; /* Size of the profile picture */
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px; /* Space below the image */
+  }
+  
+  /* Profile Details */
+  .profile-details {
+    text-align: center; /* Center text under profile image */
+    color: #fff; /* White text for visibility */
+  }
+  
+  /* Sidebar Links */
+  .tracking-section {
+    color: #fff; /* White text for links */
+  }
+  
+  .links {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .links h4 {
+    color: #fff;
+    margin: 10px 0;
+  }
+  
+  .links li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  .links li a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+  }
+  
+  .links li span {
+    color: #fff;
+    font-size: 24px; /* Adjust icon size */
+  }
+  
+  /* Main Content */
+  .main-content {
+    flex: 1; /* Take up the remaining space */
+    background-color: #f0f0f0; /* Light background for main content */
+    padding: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Title Styles */
+  .main-content h1 {
+    margin-bottom: 20px;
+  }
+  
+  /* Waste Request List Styles */
+  .waste-request-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between cards */
+  }
+  
+  /* Request Card Styles */
+  .request-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .request-card h3 {
+    margin: 0 0 10px;
+  }
+  
+  .request-card p {
+    margin: 5px 0;
+  }
+  
+  /* Action Buttons Styles */
+  .action-buttons {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px; /* Space between buttons */
+  }
+  
+  .accept-btn, .decline-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .accept-btn {
+    background-color: #4CAF50; /* Green */
+    color: white;
+  }
+  
+  .decline-btn {
+    background-color: #f44336; /* Red */
+    color: white;
+  }
+  
+  .accept-btn:hover {
+    background-color: #45a049; /* Darker green */
+  }
+  
+  .decline-btn:hover {
+    background-color: #d32f2f; /* Darker red */
+  }
+  
+  /* Logout Button */
+  .logout-btn {
+    background-color: #ff5c5c; /* Red background for logout */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .logout-btn span {
+    margin-right: 5px; /* Space between icon and text */
+  }
+  
+  /* Hover effects */
+  .sidebar:hover {
+    width: 250px; /* Expand on hover */
+  }
+  
+  .sidebar.closed:hover {
+    width: 250px; /* Expand only when hovered over the closed sidebar */
+  }
+  
+  /* User Icon Style */
+  .user-icon {
+    font-size: 30px; /* Adjust size as necessary */
+    color: #fff; /* Color of the icon */
+  }
+  

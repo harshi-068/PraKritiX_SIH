@@ -1,0 +1,75 @@
+/* AboutPage.css */
+
+/* Global Styles for About Page */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #e9f5e9; /* Light green background */
+  color: #333;
+  min-height: 100vh; /* Ensure container takes full height */
+  justify-content: flex-start; /* Align items at the start */
+}
+
+/* Header Styles */
+.about-header {
+  text-align: center;
+  margin-bottom: 30px; /* Increased margin for better spacing */
+}
+
+.about-header h1 {
+  font-size: 2.5rem; /* Slightly larger font size */
+  color: #4caf50; /* Green color */
+}
+
+.about-header p {
+  font-size: 1.2rem;
+  color: #555; /* Darker grey */
+}
+
+/* About Content Styles */
+.about-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items at the start */
+  flex-wrap: wrap; /* Allow cards to wrap */
+  gap: 20px; /* Space between cards */
+  max-width: 800px; /* Limit max width for better visibility */
+  margin: 0 auto; /* Center the content */
+  margin-top: 20px; /* Add space above the content */
+}
+
+/* Card Styles */
+.about-card {
+  background-color: #ffffff; /* White background for cards */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 300px; /* Limit the width of each card */
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.about-card:hover {
+  transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+/* Image Styles */
+.about-image {
+  width: 100%; /* Ensure image takes full card width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px 10px 0 0; /* Round top corners */
+}
+
+/* Specific margin adjustment for the Mission card */
+.about-card:nth-child(1) {
+  margin-top: -20px; /* Adjust this value to move the Mission card up */
+}
+
+/* Footer Styles */
+.about-footer {
+  margin-top: 30px; /* Space above footer */
+  text-align: center;
+  padding: 10px 0; /* Padding for footer */
+}

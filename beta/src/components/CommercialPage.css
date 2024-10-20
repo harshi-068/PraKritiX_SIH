@@ -1,0 +1,96 @@
+/* Commercial Container */
+.commercial-container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden; /* Prevent unwanted overflow */
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background: #4c6589;
+  transition: width 0.3s ease;
+  overflow: hidden; /* Ensure no content spills out */
+}
+
+.sidebar.open {
+  width: 250px;
+}
+
+.sidebar.closed {
+  width: 70px;
+}
+
+/* Sidebar Header */
+.sidebar-header {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Profile Section */
+.profile-section {
+  margin-bottom: 20px;
+}
+
+.profile-pic {
+  width: 80%;
+  border-radius: 50%;
+}
+
+.profile-details {
+  margin-top: 10px;
+}
+
+/* Logout Button */
+.logout-btn {
+  background: #ff4757;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px; /* Optional: Rounded corners */
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background: #fff;
+  overflow-y: auto; /* Allow scrolling if content exceeds height */
+  padding-bottom: 50px; /* Extra space to prevent button cut-off */
+}
+
+/* Waste Form */
+.waste-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 20px auto; /* Center the form */
+  background-color: #427b8c;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow-y: auto; /* Allow form content to scroll */
+  max-height: 80vh; /* Prevent form from exceeding screen height */
+  position: relative; /* Enable positioning for sticky elements */
+}
+
+/* Submit Button */
+.submit-btn {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  position: sticky; /* Keep button visible at the bottom */
+  bottom: 10px;
+  margin-top: 15px; /* Space above the button */
+  width: 100%; /* Full width button */
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #218838; /* Darker green on hover */
+}
